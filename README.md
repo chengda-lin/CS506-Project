@@ -4,6 +4,7 @@ Project Description:
 This project aims to analyze the relationship between Spotify audio features and song popularity, and to build predictive models that estimate a song’s popularity score based on these features.
 Spotify provides numerical audio descriptors such as danceability, energy, tempo, loudness, valence, acousticness, instrumentalness, and speechiness. These features capture measurable aspects of music and allow for quantitative analysis. The primary objective of this project is to determine which features are most strongly associated with popularity and whether they can be used to accurately predict popularity scores.
 
+
 Project Timeline:
 Week 1–2: Data Collection & Setup
 •	Register and configure Spotify API access
@@ -33,9 +34,9 @@ Week 8: Final Analysis & Report Preparation
 •	Interpret results
 •	Discuss limitations and potential improvements
 •	Prepare final report and visualizations
- 
-Project Goals:
 
+
+Project Goals:
 Goal 1: Identify significant audio features associated with popularity.
 Examine the relationship between Spotify audio features (danceability, energy, tempo, valence, loudness, acousticness, instrumentalness, speechiness) and popularity scores using correlation analysis and feature importance methods.
 
@@ -47,7 +48,8 @@ Compare different models using cross-validation and determine which features con
 
 Goal 4: Classify songs as “high popularity” vs “low popularity.”
 Convert popularity into a binary classification task (e.g., popularity ≥ 70) and evaluate performance using accuracy and F1-score.
- 
+
+
 Data Collection Plan:
 Data Source:
 The dataset used for this project is the Spotify Tracks Dataset available on Kaggle:
@@ -55,6 +57,7 @@ The dataset used for this project is the Spotify Tracks Dataset available on Kag
 https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
 
 This dataset contains over 100,000 tracks along with their popularity scores and a comprehensive set of numerical audio features, including danceability, energy, loudness, speechiness, acousticness, instrumentalness, liveness, valence, tempo, and track duration. These variables quantitatively describe musical characteristics and will serve as predictor features in the modeling process. The dataset also includes genre information, which may be used for exploratory analysis.
+
 
 Data Collection Method:
 The dataset will be downloaded directly from Kaggle in CSV format and imported into Python using the pandas library. Data preprocessing will include removing duplicate entries, handling missing values, verifying data types, and standardizing numerical features where appropriate. The cleaned dataset will then be split into training and testing sets for model development and evaluation.
