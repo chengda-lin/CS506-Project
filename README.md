@@ -2,7 +2,7 @@
 
 ## Presentation Video
 
-link
+[link](https://youtu.be/_tz_rdLHZOI)
 
 ---
 
@@ -315,5 +315,3 @@ This project includes:
 - `requirements.txt` for dependencies,
 - `eda.ipynb` for the full analysis,
 - exported figures in `notebooks/plots/`.
-
-```
