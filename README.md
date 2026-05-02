@@ -74,7 +74,7 @@ This means the cleaning step removes only a small part of the dataset, so most o
 
 ### Popularity Distribution
 
-![Distribution of Spotify Popularity](notebooks/plots/Distribution of Spotify Popularity.png)
+![Distribution of Spotify Popularity](notebooks/plots/distribution_of_spotify_popularity.png)
 
 Popularity is the main target in this project. I first look at its distribution because the shape of the target variable affects how difficult the prediction task will be.
 
@@ -90,7 +90,7 @@ This also explains why regression models may tend to predict values closer to th
 
 ### Genre Overview
 
-![Average Popularity for 15 Common Genres](notebooks/plots/Average Popularity for 15 Common Genres.png)
+![Average Popularity for 15 Common Genres](notebooks/plots/average_popularity_for_15_common_genres.png)
 
 Genre is an important variable because different genres may have different audiences and different average popularity levels.
 
@@ -108,7 +108,7 @@ This finding becomes important later because `track_genre_code` becomes the stro
 
 ### Correlation Analysis
 
-![Correlation Heatmap of Numeric Features](notebooks/plots/Correlation Heatmap of Numeric Features.png)
+![Correlation Heatmap of Numeric Features](notebooks/plots/correlation_heatmap_of_numeric_features.png)
 
 A correlation heatmap helps show whether any numeric feature has a strong linear relationship with popularity.
 
@@ -179,7 +179,7 @@ The actual-vs-predicted plot shows whether predictions are close to the real pop
 
 ### Actual vs Predicted Popularity
 
-![Actual vs Predicted Popularity (Random Forest Regressor)](notebooks/plots/Actual vs Predicted Popularity (Random Forest Regressor).png)
+![Actual vs Predicted Popularity (Random Forest Regressor)](notebooks/plots/actual_vs_predicted_popularity_random_forest_regressor.png)
 
 The actual-vs-predicted plot shows that the model captures the general direction but still has noticeable error.
 
@@ -189,7 +189,7 @@ The pattern also shows that the model is better at predicting common mid-range p
 
 ### Residual Distribution
 
-![Residual Distribution (Random Forest Regressor)](notebooks/plots/Residual Distribution (Random Forest Regressor).png)
+![Residual Distribution (Random Forest Regressor)](notebooks/plots/residual_distribution_random_forest_regressor.png)
 
 The residuals are mostly centered around 0, which means the model is not consistently too high or too low.
 
@@ -207,7 +207,7 @@ I compare Logistic Regression and Random Forest Classifier. Since popular songs 
 
 ### Confusion Matrix - Logistic Regression
 
-![Confusion Matrix - Logistic Regression](notebooks/plots/Confusion Matrix - Logistic Regression.png)
+![Confusion Matrix - Logistic Regression](notebooks/plots/confusion_matrix_logistic_regression.png)
 
 The classification results show why accuracy alone is not enough for this project.
 
@@ -217,7 +217,7 @@ So even though the accuracy looks high, the model fails at the actual goal of id
 
 ### Confusion Matrix - Random Forest Classifier
 
-![Confusion Matrix - Random Forest Classifier](notebooks/plots/Confusion Matrix - Random Forest Classifier.png)
+![Confusion Matrix - Random Forest Classifier](notebooks/plots/confusion_matrix_random_forest_classifier.png)
 
 Random Forest performs better than Logistic Regression. It still has high accuracy, but more importantly, it starts identifying some popular songs.
 
@@ -235,7 +235,7 @@ SMOTE creates synthetic examples of the minority class in the training set. The 
 
 ### Confusion Matrix - Random Forest with SMOTE
 
-![Confusion Matrix - Random Forest with SMOTE](notebooks/plots/Confusion Matrix - Random Forest with SMOTE.png)
+![Confusion Matrix - Random Forest with SMOTE](notebooks/plots/confusion_matrix_random_forest_with_smote.png)
 
 After applying SMOTE, the training set becomes balanced: the popular and non-popular classes have the same number of samples.
 
@@ -251,7 +251,7 @@ This is a stronger result because it finds many popular songs while making fewer
 
 ### Precision-Recall Curve
 
-![Precision-Recall Curve](notebooks/plots/Precision-Recall Curve.png)
+![Precision-Recall Curve](notebooks/plots/precision_recall_curve.png)
 
 The precision-recall curve is useful because this dataset has far fewer popular songs than non-popular songs.
 
@@ -263,7 +263,7 @@ In this project, this curve supports the idea that there is no perfect threshold
 
 ### Confusion Matrix - Tuned Threshold
 
-![Confusion Matrix - Tuned Threshold](notebooks/plots/Confusion Matrix - Tuned Threshold.png)
+![Confusion Matrix - Tuned Threshold](notebooks/plots/confusion_matrix_tuned_threshold.png)
 
 Lowering the threshold to 0.30 makes the model more willing to classify songs as popular.
 
@@ -281,7 +281,7 @@ I use Random Forest feature importance to understand which variables contribute 
 
 This is not a perfect explanation of causation, but it helps show which features the model relies on most when predicting popularity.
 
-![Top 15 Feature Importances from Random Forest Regressor](notebooks/plots/Top 15 Feature Importances from Random Forest Regressor.png)
+![Top 15 Feature Importances from Random Forest Regressor](notebooks/plots/top_15_feature_importances_from_random_forest_regressor.png)
 
 The feature importance plot shows that `track_genre_code` is the most important feature in the Random Forest regression model, with an importance of about 0.246.
 
