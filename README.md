@@ -1,8 +1,15 @@
 # Spotify Popularity Analysis
 
+## Project Github Repo
+
+https://github.com/chengda-lin/CS506-Project
+
+---
+
+
 ## Presentation Video
 
-[link](https://youtu.be/_tz_rdLHZOI)
+https://youtu.be/_tz_rdLHZOI
 
 ---
 
